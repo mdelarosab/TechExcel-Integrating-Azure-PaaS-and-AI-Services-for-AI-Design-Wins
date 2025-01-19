@@ -1,0 +1,7 @@
+
+POST https://apim-ouxoctsdnnprm.azure-api.net/azure-openai-api/deployments/{deployment-id}/chat/completions?api-version={api-version} HTTP/1.1
+Host: apim-ouxoctsdnnprm.azure-api.net
+Content-Type: application/json
+api-key: b6b8ec1eb7c64085b9c4c5935ac8355d
+
+{"temperature":1,"top_p":1,"stream":false,"stop":null,"max_tokens":4096,"presence_penalty":0,"frequency_penalty":0,"logit_bias":{},"user":"user-1234","messages":[{"role":"system"}],"data_sources":[{"type":"azure_search"}],"n":1,"seed":0,"response_format":{"type":"text"},"tools":[{"type":"function","function":{"description":"string","name":"string","parameters":{}}}],"tool_choice":{},"functions":[{"name":"string","description":"string","parameters":{}}],"function_call":{}}
