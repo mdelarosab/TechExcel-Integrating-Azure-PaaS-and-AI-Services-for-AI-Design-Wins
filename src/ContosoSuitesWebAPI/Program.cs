@@ -65,7 +65,8 @@ builder.Services.AddSingleton<Kernel>((_) =>
     kernelBuilder.AddAzureOpenAIChatCompletion(
         deploymentName: builder.Configuration["AzureOpenAI:DeploymentName"]!,
         endpoint: builder.Configuration["ApiManagement:Endpoint"]!,
-        apiKey: builder.Configuration["ApiManagement:ApiKey"]!
+        apiKey: builder.Configuration["ApiManagement:ApiKey"]!,
+        apiVersion: "2024-06-01"
     );
 
     #pragma warning disable SKEXP0010 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
